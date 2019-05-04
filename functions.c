@@ -178,7 +178,6 @@ void edit(){//функция редактирования по заданном�
         Person.patron[length - 1] = '\0';
         break;
     case 4:
-        clean_stdin();
         do {
         printf("Enter room (only integer): ");
         room = getInt();
@@ -403,7 +402,7 @@ int dayCheck(int month){ //проверка, что существует так�
             day = getInt();
          } while(day < 1 || day > 29);
     }
-    if (month == 4 || month == 6 || month == 9) {
+    if (month == 4 || month == 6 || month == 9 || month == 10) {
         do {
             printf("Enter DAY : ");
             day = getInt();
